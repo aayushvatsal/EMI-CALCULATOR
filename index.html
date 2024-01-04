@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loan-calculator">
+        <div class="heading">
+          <h1>EMI Calculator</h1>
+  
+          <form action="#">
+            <div class="input-container">
+              <div class="title">Amount</div>
+              <input type="text" value="50000" class="loan-amount" />
+            </div>
+  
+            <div class="input-container">
+              <div class="title">Interest Rate</div>
+              <input type="text" value="10.5" class="interest-rate" />
+            </div>
+  
+            <div class="input-container">
+              <div class="title">Tenure (in months)</div>
+              <input type="text" value="18" class="loan-tenure" />
+            </div>
+          </form>
+        </div>
+  
+        <div class="result">
+          <div class="left">
+            <div class="loan-emi">
+              <h3>Loan EMI</h3>
+              <div class="value">543</div>
+            </div>
+  
+            <div class="total-interest">
+              <h3>Total Interest Payable</h3>
+              <div class="value">5234</div>
+            </div>
+  
+            <div class="total-amount">
+              <h3>Total Amount (Principal+Intrest) </h3>
+              <div class="value">53462</div>
+            </div>
+  
+            <button class="calculate-btn">Calculate</button>
+          </div>
+
+          <div class="right">
+            <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+
+        <div class="slidecontainer">
+          <input type="range" min="10000" max="5000000" value="1000000" step="10000" class="slider" id="amount">  
+          </div><br>
+    
+          <div class="slidecontainer">
+          <input type="range" min="1" max="20" value="10" step="0.1" class="slider" id="interest">
+          </div><br>
+
+          <div class="slidecontainer">
+            <input type="range" min="1" max="30" value="10" class="slider" id="year">
+            </div><br>
+      </div>
+  
+  
+    
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
